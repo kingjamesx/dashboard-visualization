@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+html{
+  box-sizing: border-box;
+}
+*,*::after,*::before{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.layout{
+  display: flex;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
+  width: 250px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.logo{
+  font-size: 2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-name{
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.user-role{
+  margin-top: 0;
+  opacity: 0.4;
+}
+.navlist{
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  gap: 1rem;
+  
+}
+.navlist li{
+  font-size: 1.2rem;
+}
+.logout{
+  font-size: 1.2rem;
+}
+.header{
+  display: flex;
+  align-items: center;
+}
+.header-h1{
+  font-size: 1.8rem;
+}
+.select{
+  padding: 0.4rem;
+  margin-left: 12rem;
+  border-radius: 12px;
+  border: none;
+  height: 30px;
+}
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
 }
