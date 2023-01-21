@@ -13,7 +13,7 @@ const Dashboard = () => {
               method: "GET",
               headers: {
                 Accept: "application/json",
-                mode: "same-origin"
+                // mode: "same-origin"
               }
             };
             fetch(url, options)
